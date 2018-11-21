@@ -1,0 +1,145 @@
+/* ==== GENERAL STYLING ==== */
+body {
+  background-color: #f8f1e5;
+  color: #2f3131;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+}
+
+/* ====== 
+ * CUSTOM COLOUR PALETTE
+ * =====
+*/
+
+/* background */
+.steelblue {
+  background-color: #426e86 !important;
+}
+.bone {
+  background-color: #f8f1e5 !important;
+}
+.sunshine {
+  background-color: #f9ba32 !important;
+}
+.coal {
+  background-color: #2f3131 !important;
+}
+
+/* text */
+.text-steelblue {
+  color: #426e86 !important;
+}
+.text-bone {
+  color: #f8f1e5 !important;
+}
+.text-sunshine {
+  color: #f9ba32 !important;
+}
+.text-coal {
+  color: #2f3131 !important;
+}
+/* border */
+.border-coal {
+  border: 1px solid #2f3131 !important;
+}
+.border-steelblue {
+  border: 1px solid #426e86 !important;
+}
+
+/* ===== PAGE LAYOUT ==== */
+.section {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+}
+
+/* ==== HEADER STYLING ==== */
+
+#landing {
+  height: 100vh;
+  background-image: url("../images/landing-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.heading-margin {
+  margin-top: 40vh;
+}
+
+.header-slidein {
+  position: relative;
+  margin-top: 150px;
+  animation: slidein 1s forwards;
+}
+@keyframes slidein {
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* ==== SECTION H2 STYLING ==== */
+section#about h2.title,
+section#projects h2.title,
+section#contact h2.title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 30px 0 15px;
+}
+
+/* ==== SECTION HR STYLING ==== */
+section#about hr,
+section#projects hr,
+section#contact hr {
+  width: 200px;
+  height: 2px;
+  border-radius: 75%;
+  border: none;
+  background-color: #2f3131;
+  margin-bottom: 30px;
+}
+
+/* ==== ABOUT SECTION STYLING  ====*/
+
+section#about i {
+  padding: 50px 0 30px 0;
+}
+section#about #bio {
+  padding-top: 100px;
+}
+
+section#about #profile-img {
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(67, 67, 67, 1);
+  -moz-box-shadow: 6px 6px 10px 0px rgba(67, 67, 67, 1);
+  box-shadow: 6px 6px 10px 0px rgba(67, 67, 67, 1);
+}
+
+/* ==== PROJECT SECTION STYLING ==== */
+
+/* ==== CONTACT SECTION SYLING */
+
+section#contact a {
+  text-decoration: none;
+}
+
+section#contact a:hover {
+  color: #426e86;
+}
+/* ==== FOOTER STYLING ==== */
+
+footer#mainFooter {
+  padding: 30px 0;
+}
+
+footer#mainFooter h5 {
+  text-transform: uppercase;
+}
