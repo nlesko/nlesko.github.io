@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #F0F0F0;
+  color: #202020; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0; }
+
+a {
+  text-decoration: none;
+  color: #222; }
+
+li {
+  list-style: none; }
+
+#main {
+  margin-top: 70px; }
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; }
+
+header nav {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(48, 48, 48, 0.6);
+  box-shadow: 0px 5px 6px 0px rgba(48, 48, 48, 0.5); }
+  header nav .logo-branding {
+    display: inline-block;
+    font-size: 26px;
+    font-family: "Fjalla One", sans-serif;
+    padding: 15px 0; }
+    header nav .logo-branding span {
+      color: #FF2400;
+      font-weight: 700; }
+  header nav li {
+    display: inline; }
+  header nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px; }
+    header nav a:hover {
+      background: #FF2400;
+      color: #fff; }
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(48, 48, 48, 0.6);
+  box-shadow: 0px 5px 6px 0px rgba(48, 48, 48, 0.5); }
+  .card .card-header {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr;
+    grid-gap: 5px;
+    align-items: center; }
+    .card .card-header .card-title {
+      font-size: 2em;
+      font-family: "Fjalla One", sans-serif; }
+    .card .card-header .card-image {
+      height: 35px;
+      width: 35px; }
+    .card .card-header .coin-change {
+      justify-self: end;
+      font-size: 1.8em; }
+  .card .card-content {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end; }
+    .card .card-content .currency-value {
+      font-size: 2em;
+      color: #85bb65;
+      justify-self: start; }
+
+@media screen and (max-width: 1200px) {
+  header nav .logo-branding {
+    justify-self: start;
+    padding-left: 15px; }
+  header nav ul {
+    justify-self: end; }
+  #main {
+    margin-top: 80px; }
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px; } }
+
+@media screen and (max-width: 740px) {
+  .container {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 560px) {
+  header nav {
+    grid-template-columns: 1fr; }
+    header nav .logo-branding {
+      justify-self: center;
+      padding-left: 0; }
+    header nav ul {
+      justify-self: start;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%; }
+    header nav a {
+      width: 100%; }
+  #main {
+    margin-top: 150px;
+    padding: 0 5px; } }
