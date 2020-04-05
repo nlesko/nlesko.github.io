@@ -1,0 +1,157 @@
+{
+    "features": [{
+            "title": "Performance",
+            "desc": "Optimizing fast on load and lag free interactions",
+            "icon": "fab fa-cloudscale"
+        },
+        {
+            "title": "Responsive",
+            "desc": "Mobile-first approach, built for any device",
+            "icon": "fas fa-mobile-alt"
+        },
+        {
+            "title": "Dynamic",
+            "desc": "Alive Web Applications, dynamic content, not plain old static",
+            "icon": "fas fa-rocket"
+        },
+        {
+            "title": "Built With Love",
+            "desc": "Most important, build from bottom to top of my heart.",
+            "icon": "fas fa-heart"
+        }
+    ],
+    "skills": [{
+            "name": "HTML5",
+            "icon": "html",
+            "category": "frontend"
+        }, {
+            "name": "CSS/CSS3",
+            "icon": "css",
+            "category": "frontend"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "js",
+            "category": "frontend"
+        },
+        {
+            "name": "jQuery",
+            "icon": "jquery",
+            "category": "frontend"
+        },
+        {
+            "name": "NodeJS",
+            "icon": "node",
+            "category": "backend"
+        },
+        {
+            "name": "Twig",
+            "icon": "twig",
+            "category": "frontend"
+        },
+        {
+            "name": "Bootstrap",
+            "icon": "bootstrap",
+            "category": "frontend"
+        },
+        {
+            "name": "ReactJS",
+            "icon": "reactjs",
+            "category": "frontend"
+        },
+        {
+            "name": "VueJS",
+            "icon": "vue",
+            "category": "frontend"
+        },
+        {
+            "name": "Angular",
+            "icon": "ng",
+            "category": "frontend"
+        },
+        {
+            "name": "Express",
+            "icon": "express",
+            "category": "backend"
+        },
+        {
+            "name": "MaterializeCSS",
+            "icon": "matcss",
+            "category": "frontend"
+        },
+        {
+            "name": "MongoDB",
+            "icon": "mongo",
+            "category": "backend"
+        }, {
+            "name": "Git",
+            "icon": "git",
+            "category": "other"
+        },
+        {
+            "name": "Prestashop",
+            "icon": "presta",
+            "category": "other"
+        },
+        {
+            "name": "Smarty",
+            "icon": "smarty",
+            "category": "frontend"
+        },
+        {
+            "name": "Photoshop",
+            "icon": "ps",
+            "category": "other"
+        },
+        {
+            "name": "Docker",
+            "icon": "docker",
+            "category": "other"
+        }
+    ],
+    "projects": {
+        "personal": [{
+                "name": "AbsGym",
+                "desc": "AbsGym is fitness themed website built with Bootstrap 4 and jQuery",
+                "img": "AbsGym-1.jpg",
+                "repo": false,
+                "demo": "http://nytprojects.dx.am/absgym/"
+            },
+            {
+                "name": "Todo API",
+                "desc": "Todo API is task management application built with NodeJS framework Express and MongoDB as Database. Front is made using EJS templating engine and jQuery Todo API is task management application built with NodeJS framework Express and MongoDB as Database. Front is made using EJS templating engine and jQuery.",
+                "img": "todo.jpg",
+                "repo": false,
+                "demo": "https://mysterious-sands-42318.herokuapp.com/"
+            },
+            {
+                "name": "Mountain Climber",
+                "desc": "Landing page for Travel Agency. Built with CSS Flexbox",
+                "img": "mountain_climber.jpg",
+                "repo": false,
+                "demo": "http://nytprojects.dx.am/mountain/"
+            },
+            {
+                "name": "Guess the Color Game",
+                "desc": "Simple Guess the Color Game made with JavaScript. The Game asks you to guess colour of RGB value shown in header.",
+                "img": "Guess-the-color-game.jpg",
+                "repo": "https://github.com/nlesko/Guess_the_Color_Portfolio",
+                "demo": "http://nytprojects.dx.am/guess-the-color/"
+            },
+            {
+                "name": "Christmas Countdown Clock",
+                "desc": "In the mood for holidays decided to put together this simple Christmas countdown clock It contains countdown timer that is counting how much time is left till December 25, 2018, 00:00:01 in the night. (will be updated for 2019). Besides timer added simple snow-like background using canvas. Also what kind of Christmas it would be without some Christmas lights? :)",
+                "img": "countdown-clock.jpg",
+                "repo": "https://github.com/nlesko/christmas-countdown-clock",
+                "demo": "https://nlesko.github.io/projects/christmas-countdown-clock/"
+            },
+            {
+                "name": "Cryptocurrency Tracker",
+                "desc": "Cryptocurrency Tracker built with vanilla JS using Coinranking API. Web application will list 50 Cryptocurrencies and show their Icon, name, current worth US dollars and change in last 24h.",
+                "img": "cryptocurrency-tracker.jpg",
+                "repo": "https://github.com/nlesko/cryptocurrency-vanilla-js-tracker",
+                "demo": "https://nlesko.github.io/projects/cryptocurrency-tracker/"
+            }
+        ]
+    }
+}
