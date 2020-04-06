@@ -1,7 +1,7 @@
 window.onload = function () {
 
     // Loading the clock on top of background
-    let deadline = new Date('December 25, 2018 00:00:010');
+    let deadline = new Date('December 25, 2020 00:00:010');
     startTimer('clock', deadline);
 
 
