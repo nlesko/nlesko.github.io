@@ -1,6 +1,7 @@
 const IMG_PATH = window.location.origin + '/assets/images/'
 const features = $('.features');
 const personalProjects = $('.projects--personal');
+const proProjects = $('.projects--professional');
 const skills = $('.skillset');
 // const features = document.querySelector('.features');
 
@@ -26,6 +27,42 @@ $.getJSON('../portfolio.json', function (data) {
     });
     data.projects.personal.forEach(project => {
         personalProjects.append(`
+        <article class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+        <div class="card card--project bone">
+            <header class="card-header">
+                <img class="img-fluid activator" src="build/imgs/${project.img}">
+            </header>
+            <div class="card-body">
+                <span class="card-title activator text-coal">${project.name}
+                    <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+
+                </p>
+            </div>
+            <footer class="card-footer">
+                <a href="${project.demo}" target="_blank" class="btn btn-primary">View
+                    Demo
+                </a>
+                ${project.repo ? `<a href="${project.repo}" class="btn btn-primary" target="_blank">View
+                Github
+                </a>` : ''}
+                
+            </footer>
+            <div class="card-reveal bone">
+                <span class="card-title card-close text-coal card-close">${project.name}
+                    <i class="material-icons right">close</i>
+                </span>
+                <p class="text-coal">${project.desc}
+                </p>
+            </div>
+        </div>
+    </article>
+        `)
+    });
+
+    data.projects.pro.forEach(project => {
+        proProjects.append(`
         <article class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
         <div class="card card--project bone">
             <header class="card-header">

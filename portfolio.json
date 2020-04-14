@@ -152,6 +152,29 @@
                 "repo": "https://github.com/nlesko/cryptocurrency-vanilla-js-tracker",
                 "demo": "https://nlesko.github.io/projects/cryptocurrency-tracker/"
             }
+        ],
+        "pro": [
+            {
+                "name": "Web template",
+                "desc": "Modular, component-based website template built with TWIG template engine, bootstrap, jQuery, SCSS, slick, webpack and more. The template contains configurator for displaying different options on different pages.",
+                "img": "dm_t1.jpg",
+                "repo": false,
+                "demo": "http://t1.dimedia.hr/"
+            },
+            {
+                "name": "Begamont Gradjenje",
+                "desc": "Website targeted for the residential building market, built with TWIG template engine, bootstrap, sass, webpack, jQuery, and more. The website has features like SVG ground plan hover and clicks events, fullscreen lightbox gallery and more.",
+                "img": "begamont.jpg",
+                "repo": false,
+                "demo": "https://www.begamont-gradjenje.hr/"
+            },
+            {
+                "name": "Library webshop",
+                "desc": "Library webshop build with Prestashop e-commerce solution with custom theme and modules.",
+                "img": "ljevak_hr.jpg",
+                "repo": false,
+                "demo": "https://www.ljevak.hr/"
+            }
         ]
     }
 }
