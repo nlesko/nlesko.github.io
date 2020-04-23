@@ -163,7 +163,7 @@
                 "name": "Build a Robot",
                 "desc": "A Robot builder web application that uses Vue.js, Vuex for state managment, Axios for AJAX calls and Express for serving application.",
                 "img": "build-a-bot.jpg",
-                "repo": false,
+                "repo": "https://github.com/nlesko/build-a-bot",
                 "demo": "https://dry-taiga-74990.herokuapp.com/build"
             }
         ],
