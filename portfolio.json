@@ -151,6 +151,20 @@
                 "img": "cryptocurrency-tracker.jpg",
                 "repo": "https://github.com/nlesko/cryptocurrency-vanilla-js-tracker",
                 "demo": "https://nlesko.github.io/projects/cryptocurrency-tracker/"
+            },
+            {
+                "name": "Vue Smoothies",
+                "desc": "A simple CRUD Smoothie recipe website using Vue.js, Axios for AJAX calls and Firebase for storing data.",
+                "img": "vue-smoothies.jpg",
+                "repo": false,
+                "demo": "https://serene-shore-38026.herokuapp.com/"
+            },
+            {
+                "name": "Build a Robot",
+                "desc": "A Robot builder web application that uses Vue.js, Vuex for state managment, Axios for AJAX calls and Express for serving application.",
+                "img": "build-a-bot.jpg",
+                "repo": false,
+                "demo": "https://dry-taiga-74990.herokuapp.com/build"
             }
         ],
         "pro": [
