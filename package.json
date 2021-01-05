@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nlesko/nlesko.github.io#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "html-webpack-plugin": "^4.0.3",
     "mini-css-extract-plugin": "^0.9.0"
   },
