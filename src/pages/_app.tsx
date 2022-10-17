@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from "next/head";
+import Footer from '../containers/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const description =
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#000000" /> */}
       </Head>
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
