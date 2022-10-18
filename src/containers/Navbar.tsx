@@ -10,7 +10,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className='flex items-center flex-wrap bg-blue-400 p-3 '>
+      <nav className='flex items-center flex-wrap bg-steel-blue p-3 '>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <span className='text-xl text-white font-bold uppercase tracking-wide'>

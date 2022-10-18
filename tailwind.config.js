@@ -6,7 +6,13 @@ module.exports = {
     "./src/containers/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bone: '#f8f1e5',
+        coal: '#2f3131',
+        'steel-blue': '#426e86'
+      }
+    },
   },
   plugins: [],
 }

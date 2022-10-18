@@ -1,26 +1,24 @@
-import { ReactNode } from "react";
-
 interface Props {
     className?: string;
-    children?: ReactNode;
+    children?: React.ReactNode;
     title?: string;
 }
 
-const Section = (props: Props) => {
+const Section: React.FC<Props> =  ({ className, children, title, ...props }) => {
 
     const renderTitle = () => {
         return (
             <div className="w-full flex items-center justify-center">
-                <h2 className="text-3xl font-bold">{props.title}</h2>
+                <h2 className="text-3xl">{title}</h2>
             </div>
         )
     }
 
     return(
-        <section className={`w-full flex flex-col flex-1 py-20 bg-green-900 text-white items-center ${props.className}`} >
+        <section className={`w-full flex flex-col flex-1 py-20 items-center ${className}`} >
             <div className="container">
-                {props.title && renderTitle()}
-                {props.children}
+                {title && renderTitle()}
+                {children}
             </div>
         </section>
     )

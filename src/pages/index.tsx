@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 
 import Image from "next/image";
+import Banner from '../containers/Banner';
 
 import { Navbar } from '../containers/Navbar'
 import Section from '../containers/Section'
@@ -116,9 +117,10 @@ const Home: NextPage = () => {
     <>
       <header>
         <Navbar />
+        <Banner />
       </header>
       <main>
-        <Section title="About" className="bg-slate-700">
+        <Section title="About" className="bg-steel-blue text-white">
           <div className="flex flex-col">
             <h3 className="text-xl text-bold">
               Hi, my name is Nikola!
@@ -128,7 +130,7 @@ const Home: NextPage = () => {
             </p>
           </div>
         </Section>
-        <Section title='Skill set'>
+        <Section title='Skill set' className='bg-bone text-coal'>
           <div className="flex flex-wrap">
             {skillSets.length > 0 && skillSets.map((skill, index) => (
               <div className="w-1/3 px-4 mb-6" key={skill.id}>
@@ -146,8 +148,8 @@ const Home: NextPage = () => {
 
           </div>
         </Section>
-        <Section title="Projects" />
-        <Section title="Contact" />
+        <Section title="Projects" className='bg-coal text-bone' />
+        <Section title="Contact" className='bg-bone text-coal' />
       </main>
     </>
   )
