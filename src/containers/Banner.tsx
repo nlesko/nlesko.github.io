@@ -4,28 +4,21 @@ interface Props {
 
 const Banner: React.FC<Props> =  ({ className, ...props }) => {
 
-    const renderTitle = () => {
-        return (
-            <div className="w-full flex">
-                <h3 className="text-xl">Hi, my name is</h3>
-            </div>
-        )
-    }
-
     return(
         <section className={`w-full h-screen flex flex-col flex-1 py-20 items-center justify-center ${className}`} >
             <div className="container">
-                {renderTitle()}
-                <div className="my-6" />
                 <div className="flex">
-                    <h1 className="text-5xl uppercase font-light tracking-widest">Nikola Leško.</h1>
+                    <h1 className="text-2xl font-light tracking-widest">
+                        Hi, my name is
+                        <span className="text-6xl uppercase block mt-6 tracking-[10px]">Nikola.</span> 
+                    </h1>
                 </div>
-                <div className="flex">
+                {/* <div className="flex">
                     <h2 className="text-5xl uppercase font-light tracking-widest">Building stuff for the web</h2>
-                </div>
+                </div> */}
                 <div className="my-7" />
-                <p className="text-xl">
-                I am a JavaScript Web Developer. I offer a complete Web Application solution, includes development and design. Creating beautiful and dynamic custom-built Applications for clients ranging from individuals to small-businesses.
+                <p className="text-2xl">
+                I am a software engineer
                 </p>
             </div>
         </section>

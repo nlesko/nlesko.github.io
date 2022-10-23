@@ -9,10 +9,18 @@ export enum ProjectCategory {
     PROFESSIONAL = 2,
 }
 
+export interface IconTypeProps {
+    width?: number,
+    height?: number,
+    className?: string
+}
+
+export type IconType = (props: IconTypeProps) => JSX.Element;
+
 export type Skill = {
     id: number;
     name: string;
-    imageUrl: string;
+    icon: IconType;
     category: SkillCategory;
 }
 

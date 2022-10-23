@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
-
 import Image from "next/image";
+import { BeakerIcon } from '@heroicons/react/20/solid';
+import { AdobePhotoshop, Bootstrap, Docker, DotNet, ExpressJs, Git, JavaScript, MicrosoftSQLServer, MongoDB, NodeJs, PostgreSQL, Prestashop, ReactJs, Tailwind, TypeScript, VueJs } from '../components/icons';
 import SkillCard from '../components/SkillCard';
 import Banner from '../containers/Banner';
 
@@ -8,108 +9,98 @@ import { Navbar } from '../containers/Navbar'
 import Section from '../containers/Section'
 import { Project, ProjectCategory, Skill, SkillCategory } from '../data'
 
+import profilePic from '../../public/profile_540px.jpg';
+
 const Home: NextPage = () => {
   const skillSets: Array<Skill> = [
     {
-      id: 0,
-      name: 'HTML5',
-      imageUrl: "html",
-      category: SkillCategory.FRONTEND
-    },
-    {
       id: 1,
-      name: "CSS/CSS3",
-      imageUrl: "css",
+      name: 'React',
+      icon: ReactJs,
       category: SkillCategory.FRONTEND
     },
     {
       id: 2,
-      name: 'React',
-      imageUrl: '',
+      name: 'JavaScript',
+      icon: JavaScript,
       category: SkillCategory.FRONTEND
     },
     {
       id: 3,
-      name: 'JavaScript',
-      imageUrl: '',
+      name: 'TypeScript',
+      icon: TypeScript,
       category: SkillCategory.FRONTEND
     },
     {
       id: 4,
       name: 'Node',
-      imageUrl: "node",
+      icon: NodeJs,
       category: SkillCategory.BACKEND
     },
     {
       id: 5,
-      name: 'Twig',
-      imageUrl: "twig",
+      name: 'Tailwind',
+      icon: Tailwind,
       category: SkillCategory.FRONTEND
     },
     {
       id: 6,
       name: 'Bootstrap',
-      imageUrl: "bootstrap",
+      icon: Bootstrap,
       category: SkillCategory.FRONTEND
     },
     {
       id: 7,
       name: "VueJS",
-      imageUrl: "vuejs",
+      icon: VueJs,
       category: SkillCategory.FRONTEND
     },
     {
       id: 8,
       name: "Express",
-      imageUrl: "express",
+      icon: ExpressJs,
       category: SkillCategory.BACKEND
     },
     {
       id: 9,
       name: "MongoDB",
-      imageUrl: "mongo",
+      icon: MongoDB,
       category: SkillCategory.BACKEND
     },
     {
       id: 10,
       name: "MSSQL",
-      imageUrl: "mssql",
+      icon: MicrosoftSQLServer,
       category: SkillCategory.BACKEND
     },
     {
       id: 11,
       name: "PostgreSQL",
-      imageUrl: "psql",
+      icon: PostgreSQL,
       category: SkillCategory.BACKEND
     },
     {
       id: 12,
       name: "Git",
-      imageUrl: "git",
+      icon: Git,
       category: SkillCategory.OTHER
     },
     {
       id: 13,
       name: "Prestashop",
-      imageUrl: "presta",
+      icon: Prestashop,
       category: SkillCategory.OTHER
     },
     {
       id: 14,
-      name: "Smarty",
-      imageUrl: "smarty",
-      category: SkillCategory.FRONTEND
-    },
-    {
-      id: 15,
       name: "Photoshop",
-      imageUrl: "ps",
+      icon: AdobePhotoshop,
       category: SkillCategory.OTHER
     },
     {
       id: 16,
       name: "Docker",
-      imageUrl: "docker",
+      icon: Docker,
       category: SkillCategory.OTHER
     }
   ];
@@ -212,19 +203,88 @@ const Home: NextPage = () => {
       </header>
       <main>
         <Section title="About" className="">
-          <div className="flex flex-col">
-            <h3 className="text-xl text-bold">
-              Hi, my name is Nikola!
-            </h3>
-            <p className="text-base">
-              I am a JavaScript Web Developer. I offer a complete Web Application solution, includes development and design. Creating beautiful and dynamic custom-built Applications for clients ranging from individuals to small-businesses.
-            </p>
+          <div className="flex flex-row flex-wrap items-center">
+            <div className="w-1/4 px-6">
+              <div className="flex flex-col bg-steel-blue-800/30 px-8 py-12 items-center"><div>
+                <BeakerIcon className="h-20 w-20" />
+              </div>
+                <div className="my-2" />
+                <div className='text-center'>
+                  <h4 className='text-xl'>Performance</h4>
+                  <div className="my-1" />
+                  <p className="text-sm">
+                    Optimizing fast on load and lag free interactions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/4 px-6">
+              <div className="flex flex-col bg-steel-blue-800/30 px-8 py-12 items-center"><div>
+                <BeakerIcon className="h-20 w-20" />
+              </div>
+                <div className="my-2" />
+                <div className='text-center'>
+                  <h4 className='text-xl'>Performance</h4>
+                  <div className="my-1" />
+                  <p className="text-sm">
+                    Optimizing fast on load and lag free interactions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/4 px-6">
+              <div className="flex flex-col bg-steel-blue-800/30 px-8 py-12 items-center"><div>
+                <BeakerIcon className="h-20 w-20" />
+              </div>
+                <div className="my-2" />
+                <div className='text-center'>
+                  <h4 className='text-xl'>Performance</h4>
+                  <div className="my-1" />
+                  <p className="text-sm">
+                    Optimizing fast on load and lag free interactions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/4 px-6">
+              <div className="flex flex-col bg-steel-blue-800/30 px-8 py-12 items-center"><div>
+                <DotNet className="h-20 w-20" />
+              </div>
+                <div className="my-2" />
+                <div className='text-center'>
+                  <h4 className='text-xl'>Performance</h4>
+                  <div className="my-1" />
+                  <p className="text-sm">
+                    Optimizing fast on load and lag free interactions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="my-20" />
+          <div className="flex flex-row px-4">
+            <div className="w-full p-10">
+              <h3 className="text-4xl mb-4">Who am I?</h3>
+              <p className="text-xl">
+              Hello! My name is Nikola Leško, and  I am a Software engineer. I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps, focusing on fast, elegant, and accessible user experiences.
+              <br />
+              <br />
+              In building applications, I'm equipped with just the right tools and can function independently of them to deliver fast, resilient solutions optimized for scale - performance, scalability, and accessibility are priorities while building the best possible solution.
+              </p>
+            </div>
           </div>
         </Section>
-        <Section title='Skill set' className=''>
-          <div className="flex flex-wrap">
+        <Section title="Toolbox">
+        <div className="flex flex-row px-4">
+            <div className="w-full p-10">
+        <p className="text-xl">
+              Here are a few technologies I’ve been working with recently:
+            </p>
+            </div>
+            </div>
+        <div className="flex flex-wrap">
             {skillSets.length > 0 && skillSets.map((skill, index) => (
-              <SkillCard skill={skill} key={skill.id} />
+              <SkillCard skill={skill} key={skill.id} icon={(props) => skill.icon ? <skill.icon {...props} /> : undefined} />
             ))
             }
 
@@ -234,7 +294,7 @@ const Home: NextPage = () => {
           {projects.length > 0 && projects.map((project, index) => (
             <div className="flex flex-row mb-6 relative" key={project.id}>
               <div className="w-1/2 relative z-10">
-                <Image src={'/cryptocurrency-tracker.jpg'} alt={project.name} layout="responsive" width="100%" height="100%" />
+                <Image src={'/cryptocurrency-tracker.jpg'} alt={project.name} layout="fill" />
               </div>
               <div className="w-1/2 flex flex-col justify-between relative z-20">
                 <h3 className="text-2xl uppercase pl-8 pt-2">
