@@ -24,3 +24,5 @@ export {default as GitHub} from './GitHub';
 export {default as Redux} from './Redux';
 export {default as ReduxSaga} from './ReduxSaga';
 export {default as Axios} from './Axios';
+export {default as NCloudScale} from './NCloudScale';
+export {default as Rocket} from './Rocket';

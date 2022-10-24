@@ -20,11 +20,11 @@ interface Props {
 }
 
 
-const SkillCard: React.FC<Props> = ({ skill, icon, ...props }) => {
+const SkillCard: React.FC<Props> = ({ skill, ...props }) => {
     return (
         <div className="w-1/4 px-4 mb-6">
             <Card 
-                className="bg-steel-blue-800/30 text-white shadow items-center"
+                className="bg-steel-blue-800/30 text-white shadow-md items-center"
                 row
             >
                 <div className="p-6">

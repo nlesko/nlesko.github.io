@@ -34,3 +34,10 @@ export type Project = {
     tags: string[];
     projectCategory: ProjectCategory;
 }
+
+export type Feature = {
+    id: number;
+    name: string;
+    description: string;
+    icon: IconType;
+}
