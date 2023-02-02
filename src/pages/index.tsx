@@ -175,7 +175,7 @@ const Home: NextPage = () => {
       repository: null,
       demoUrl: "http://t1.dimedia.hr/",
       tags: ['React', 'Node', 'CSS'],
-      projectCategroy: ProjectCategory.PROFESSIONAL
+      projectCategory: ProjectCategory.PROFESSIONAL
     },
     {
       id: 8,
@@ -184,6 +184,7 @@ const Home: NextPage = () => {
       imageUrl: "begamont.jpg",
       repository: null,
       demoUrl: "https://www.begamont-gradjenje.hr/",
+      tags: [],
       projectCategory: ProjectCategory.PROFESSIONAL
     },
     {
@@ -193,6 +194,7 @@ const Home: NextPage = () => {
       imageUrl: "ljevak_hr.jpg",
       repository: null,
       demoUrl: "https://www.ljevak.hr/",
+      tags: [],
       projectCategory: ProjectCategory.PROFESSIONAL
     }
   ];
@@ -241,10 +243,10 @@ const Home: NextPage = () => {
             <div className="w-full p-10">
               <h3 className="text-4xl mb-4">Who am I?</h3>
               <p className="text-xl">
-                Hello! My name is Nikola Leško, and  I am a Software engineer. I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps, focusing on fast, elegant, and accessible user experiences.
+                Hello! My name is Nikola Leško, and  I am a Software engineer. I&apos;ve built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps, focusing on fast, elegant, and accessible user experiences.
                 <br />
                 <br />
-                In building applications, I'm equipped with just the right tools and can function independently of them to deliver fast, resilient solutions optimized for scale - performance, scalability, and accessibility are priorities while building the best possible solution.
+                In building applications, I&apos;m equipped with just the right tools and can function independently of them to deliver fast, resilient solutions optimized for scale - performance, scalability, and accessibility are priorities while building the best possible solution.
               </p>
             </div>
           </div>
@@ -259,7 +261,7 @@ const Home: NextPage = () => {
           </div>
           <div className="flex flex-wrap">
             {skillSets.length > 0 && skillSets.map((skill, index) => (
-              <SkillCard skill={skill} key={skill.id} icon={(props) => skill.icon ? <skill.icon {...props} /> : undefined} />
+              <SkillCard skill={skill} key={skill.id}  />
             ))
             }
 
