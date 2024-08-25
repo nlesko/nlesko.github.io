@@ -1,7 +1,17 @@
 window.onload = function () {
 
     // Loading the clock on top of background
-    let deadline = new Date('December 25, 2020 00:00:010');
+    const currentDate = new Date();
+    const currentYear = currentDate.getUTCFullYear();
+    let deadline = new Date(`December 25, ${currentYear} 00:00:010`);
+    // check if december 25th has passed, if yes add 1 year
+    if(
+        currentDate.getDate() > deadline.getDate() 
+        && currentDate.getMonth() === deadline.getMonth()
+         && currentDate.getFullYear() === deadline.getFullYear()
+    ) {
+        deadline = new Date(`December 25, ${currentYear+1} 00:00:010`);
+    }
     startTimer('clock', deadline);
 
 
